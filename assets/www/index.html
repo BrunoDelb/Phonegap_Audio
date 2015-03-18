@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+        <title>PhoneGap Audio Player</title>
+    </head>
+    <body>
+		<div data-role="page">
+			<div data-role="header" data-position="fixed">
+				<h1>Audio Player</h1>
+			</div>
+			<div data-role="content">
+				<h2>Player</h2>
+				<div data-role="controlgroup" data-type="horizontal">
+					<input type="button" id="btnPlay" data-role="button" value="Joue" />
+					<input type="button" id="btnPause" data-role="button" value="Pause" disabled />
+					<input type="button" id="btnStop" data-role="button" value="Arrête" />
+					<input type="button" id="btnRecord" data-role="button" value="Enregistre">
+				</div>
+				<div id="capture"></div>
+			</div>
+		</div>
+        <script type="text/javascript" src="cordova-2.7.0.js"></script>
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery.mobile-1.0.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="social-message.js"></script>
+		<script type="text/javascript" charset="utf-8" src="app.js"></script>
+    </body>
+</html>
